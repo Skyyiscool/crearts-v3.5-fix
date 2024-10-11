@@ -1,0 +1,131 @@
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Left (Combined)          ║ Base                                                                                    ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* Spacing */
+.scroller_fea3ef {
+  contain: unset;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Left (Combined)          ║ Divided                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* Spacing */
+.wrapper_fea3ef {
+  margin-top: calc((var(--guild-icon) * 3) + (var(--guild-spacing) * 4) + var(--layout-margin) + var(--layout-margin-top)) !important;
+}
+
+.scroller_fea3ef {
+  padding-top: 0px !important;
+}
+
+/* Home Button */
+.tutorialContainer_f9623d {
+  position: fixed;
+  background: var(--background-secondary);
+  border-radius: var(--radius-primary);
+  padding: var(--inner-secondary) 0px;
+  height: calc((var(--guild-icon) * 3) + (var(--guild-spacing) * 2)) !important;
+  top: var(--layout-margin-top);
+}
+
+.platform-win .tutorialContainer_f9623d {
+  top: calc(var(--height-titlebar) - 2px + var(--layout-margin-top));
+}
+
+/* Explore Button */
+.scroller_fea3ef > .listItem_c96c45:nth-last-child(2) {
+  position: fixed;
+  top: calc(var(--layout-margin-top) + var(--inner-secondary) + var(--guild-icon) + var(--guild-spacing));
+}
+
+.platform-win .scroller_fea3ef > .listItem_c96c45:nth-last-child(2) {
+  position: fixed;
+  top: calc(var(--height-titlebar) - 2px + var(--layout-margin-top) + var(--inner-secondary) + var(--guild-icon) + var(--guild-spacing));
+}
+
+.platform-web .scroller_fea3ef > .listItem_c96c45:nth-last-child(4) {
+  position: fixed !important;
+  top: calc(var(--layout-margin-top) + var(--inner-secondary) + var(--guild-icon) + var(--guild-spacing));
+}
+
+/* Add Server Button */
+.tutorialContainer_c96c45 {
+  position: fixed;
+  top: calc(var(--layout-margin-top) + var(--inner-secondary) + var(--guild-icon) + var(--guild-spacing) + var(--guild-icon) + var(--guild-spacing));
+}
+
+.platform-win .tutorialContainer_c96c45 {
+  position: fixed;
+  top: calc(var(--height-titlebar) - 2px + var(--layout-margin-top) + var(--inner-secondary) + var(--guild-icon) + var(--guild-spacing) + var(--guild-icon) + var(--guild-spacing));
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Left (Combined)          ║ Divided (DM Button)                                                                     ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* Spacing */
+[style="opacity: 1; height: 56px; transform: scale(1);"] {
+  order: -2;
+  border-radius: var(--radius-primary);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 50px !important;
+}
+
+/* Separator */
+.scroller_fea3ef > .listItem_c96c45:nth-last-child(5) {
+  order: -1;
+}
+
+[style="opacity: 1; height: 56px; transform: scale(1);"] + .listItem_c96c45 .guildSeparator_d0c57e {
+  display: block;
+}
+
+.guildSeparator_d0c57e {
+  display: none;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Left (Combined)          ║ Buttons                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* Spacing */
+.wrapper_fea3ef {
+  margin-bottom: calc(var(--layout-margin-bottom) + var(--inner-secondary) + 48px + var(--inner-secondary) + 48px + var(--inner-secondary) + 48px + var(--inner-secondary) + var(--layout-margin)) !important;
+}
+
+/* Background */
+.panels_a4d4d9 .container_b2ca13:last-child .flex_dc333f {
+  position: fixed;
+  background: var(--background-secondary);
+  border-radius: var(--radius-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: calc(var(--layout-margin-bottom));
+  left: var(--layout-margin-left);
+  width: 72px;
+  padding: var(--inner-secondary) 0px;
+  margin: 0px;
+  grid-gap: var(--inner-secondary);
+}
+
+/* Buttons */
+.panels_a4d4d9>.container_b2ca13:last-child .directionRow__65900 .button_adca65 {
+  background: var(--background-primary);
+  border-radius: var(--radius-primary);
+  width: 48px;
+  height: 48px;
+}
+
+/* Panel */
+.panels_a4d4d9>.container_b2ca13:last-child {
+margin-bottom: -42px;
+}
+
+/* Remove Game Activity */
+.panels_a4d4d9>.container_b2ca13:last-child .button_adca65:nth-last-child(4) {
+  display: none;
+}
